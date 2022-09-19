@@ -53,14 +53,18 @@ h1 {
 
 .header input {
     grid-column: 2;
-    width: 100%;
+    width: 75%;
+    justify-self: flex-start;
     height: 24px;
     background-color: #e7e5e4;
     border-radius: 20px;
     border-style: solid;
     align-self: center;
-    padding: 0px 5px;
-    letter-spacing: 0.5px;
+    padding: 0px 10px;
+    letter-spacing: 0.75px;
+    color:#292524;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .header .profile {
@@ -153,6 +157,10 @@ h1 {
     padding-left: 2rem;
     padding-right: 2rem;
 
+    box-shadow: 3px 0px 3px rgb(0,0,0,.1);
+    position: relative;
+    z-index: 11;
+
     /* border: 1px solid red; */
 }
 
@@ -220,6 +228,9 @@ h1 {
 .main-content h1 {
     color: #292524;
     font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 .projects {
@@ -233,12 +244,45 @@ h1 {
     gap: 1rem;
 }
 
-.projects-grid div {
-    height: 300px;
+.project > h2 {
+    font-size: 16px;
+    color: #292524;
+    padding: 0;
+    margin: 0;
+}
+
+
+.project > p {
+    font-size: 14px;
+    color: #57534e;
+}
+
+.projects-grid > div {
+    height: 200px;
     background-color: #f5f5f4;
     box-shadow: 1px 1px 5px rgb(0,0,0,.1);
     border-radius: 5px;
     border-left: 8px solid #a8a29e;
+    padding: 2rem 1rem;
+    position: relative
+}
+
+.project > div {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.project div > img {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
 }
 
 .announcement-grid {
